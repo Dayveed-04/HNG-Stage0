@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card - HNG Stage 0</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <article class="profile-card" data-testid="test-profile-card">
+        <header class="card-header">
+            <figure class="avatar-container">
+                <img 
+                    src="mee.png" 
+                    alt="Profile picture of Yourself"
+                    class="avatar-img"
+                    data-testid="test-user-avatar"
+                />
+            </figure>
+             <div class="avatar-upload">
+                    <label for="avatarUpload" class="upload-btn">
+                        Change Image
+                    </label>
+                    <input 
+                        type="file" 
+                        id="avatarUpload" 
+                        accept="image/*"
+                        aria-label="Upload profile picture"
+                    >
+                </div>
+            <h2 class="user-name" data-testid="test-user-name">Uwaje David</h2>
+            <p class="user-time" data-testid="test-user-time" id="currentTime"></p>
+        </header>
+
+        <div class="card-content">
+            <p class="user-bio" data-testid="test-user-bio">
+                Full-stack developer passionate about creating accessible and user-friendly web experiences. 
+                I love building innovative solutions that make a positive impact on people's lives.
+            </p>
+
+            <nav aria-label="Social media links">
+                <ul class="social-links" data-testid="test-user-social-links">
+                    <li>
+                        <a 
+                            href="https://x.com/DavidUwaje" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            data-testid="test-user-social-twitter"
+                            aria-label="Twitter profile"
+                        >
+                            <img src="twitter.webp" >
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="https://github.com/Dayveed-04" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            data-testid="test-user-social-github"
+                            aria-label="GitHub profile"
+                        >
+                            <img src="github.webp">
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="https://www.linkedin.com/in/david-uwaje-58153425b/" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            data-testid="test-user-social-linkedin"
+                            aria-label="LinkedIn profile"
+                        >
+                            <img src="Linkedln.webp">
+                        </a>
+                    </li>
+            
+                </ul>
+            </nav>
+
+            <div class="interests-section">
+                <section>
+                    <h3>Hobbies</h3>
+                    <ul class="interest-list" data-testid="test-user-hobbies">
+                        <li>Playing console Games</li>
+                        <li>Watcchin Animes</li>
+                        <li>Writing codes</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Dislikes</h3>
+                    <ul class="interest-list dislikes-list" data-testid="test-user-dislikes">
+                        <li> Noise</li>
+                        <li> Stress</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </article>
+
+  <script src="script.js"></script>
+</body>
+</html>
