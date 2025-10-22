@@ -9,10 +9,33 @@
             line-height: 1.6;
             min-height: 100vh;
             display: flex;
-            align-items: center;
-            justify-content: center;
+             flex-direction: column;
             padding: 20px;
+
         }
+        .main-nav {
+             background: rgb(14, 14, 78);
+             padding: 15px 0;
+             text-align: center;
+        }
+
+         .main-nav ul {
+                 list-style: none;
+                 display: flex;
+                 justify-content: center;
+                 gap: 30px;
+                 flex-wrap: wrap;
+        }
+        .main-nav a {
+             color: white;
+             text-decoration: none;
+             font-weight: 600;
+             transition: color 0.3s ease;
+        }
+        .main-nav a:hover {
+            color: #aab3ff;
+        }
+
 
         .profile-card {
             background: white;
@@ -21,6 +44,7 @@
             max-width: 800px;
             width: 100%;
             overflow: hidden;
+             margin: 20px auto;
         }
 
         .card-header {
@@ -153,6 +177,58 @@
             position: relative;
             color: #555;
         }
+        form {
+  max-width: 600px;
+  margin: 30px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  background: rgb(14, 14, 78);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #5568d3;
+}
+
+span {
+  color: red;
+  font-size: 0.9rem;
+}
+
+#successMessage {
+  text-align: center;
+  color: green;
+  font-weight: bold;
+}
+
 
 
         @media (max-width: 768px) {
@@ -207,3 +283,85 @@
                 height: 100px;
             }
         }
+        /* =======================
+   ABOUT PAGE STYLING
+   ======================= */
+
+.about-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about-header h1 {
+  font-size: 2.2rem;
+  color: rgb(14, 14, 78);
+  margin-bottom: 10px;
+}
+
+.about-header p {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.about-container section {
+  margin-bottom: 30px;
+}
+
+.about-container h2 {
+  color: rgb(14, 14, 78);
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  border-left: 5px solid #667eea;
+  padding-left: 10px;
+}
+
+.about-container p,
+.about-container li {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.about-container ul {
+  list-style-type: disc;
+  margin-left: 25px;
+}
+
+.about-container ul li {
+  margin-bottom: 6px;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .about-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-container h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container {
+    padding: 15px;
+  }
+
+  .about-header p {
+    font-size: 1rem;
+  }
+}
